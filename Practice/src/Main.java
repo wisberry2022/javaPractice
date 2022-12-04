@@ -1,9 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        rPerson DW = new rPerson("김동원", "male", 5);
-        DW.Birth();
-        DW.checkHobbies();
-        DW.addHobbies("유튜브보기","드럼치기","기타치기");
-        DW.checkHobbies();
+        rMother Mother = new rMother("김민화", "female", 30);
+        rFather Father = new rFather("박지훈", "male", 34);
+        Marry Marriage = new Marry(Mother, Father);
+        Marriage.tryToBaby("박서준");
     }
 }
