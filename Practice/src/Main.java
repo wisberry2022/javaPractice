@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        rMother Mother = new rMother("김민화", "female", 30);
-        rFather Father = new rFather("박지훈", "male", 34);
+        rMother Mother = new rMother("김태희", "female", 30);
+        rFather Father = new rFather("정지훈", "male", 32);
         Marry Marriage = new Marry(Mother, Father);
-        Marriage.tryToBaby("박서준");
+        Marriage.tryToBaby("김지훈");
     }
 }
