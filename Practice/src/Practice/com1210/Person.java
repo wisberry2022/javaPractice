@@ -1,3 +1,5 @@
+package Practice.com1210;
+
 public abstract class Person {
     String name;
     String gender;

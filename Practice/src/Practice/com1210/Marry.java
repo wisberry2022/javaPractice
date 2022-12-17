@@ -1,3 +1,5 @@
+package Practice.com1210;
+
 import java.util.Random;
 public class Marry {
     private rMother Mother;

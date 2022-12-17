@@ -1,3 +1,5 @@
+package Practice.com1210;
+
 public class Main {
     public static void main(String[] args) {
         rMother Mother = new rMother("김태희", "female", 30);

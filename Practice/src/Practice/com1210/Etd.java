@@ -1,4 +1,4 @@
-package Practice;
+package Practice.com1210;
 
 class Phone {
     String name;

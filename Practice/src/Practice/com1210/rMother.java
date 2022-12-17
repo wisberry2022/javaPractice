@@ -1,3 +1,5 @@
+package Practice.com1210;
+
 import java.util.Random;
 
 class Embryo extends Baby {

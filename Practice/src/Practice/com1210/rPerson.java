@@ -1,3 +1,5 @@
+package Practice.com1210;
+
 import java.util.ArrayList;
 public class rPerson extends Person {
     private ArrayList<String> hobbies = new ArrayList<String>();
