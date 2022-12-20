@@ -63,13 +63,21 @@ class Node {
         this.length--;
     }
 
+    // 리스트의 데이터를 삭제
     public void removeItm(int data) {
         Node currentNode = this;
         Node nextNode = this.next;
         while(true) {
-            if(currentNode.data == data) {
+            if(nextNode.data == data) {
+                currentNode.next = nextNode.next;
+                break;
+            }else if(currentNode.data == data) {
+                currentNode.data = nextNode.data;
+                currentNode.next = nextNode.next;
                 break;
             }
+            currentNode = nextNode;
+            nextNode = currentNode.next;
         }
         this.length--;
     }
@@ -116,15 +124,9 @@ public class Link {
         linkedList.loop();
         System.out.println(linkedList.size());
         System.out.println("----------------------------------");
-        linkedList.removeIdx(1);
+        linkedList.removeItm(2);
+        linkedList.removeItm(4);
         linkedList.loop();
-        System.out.println("----------------------------------");
-        linkedList.removeIdx(0);
-        linkedList.loop();
-        System.out.println("----------------------------------");
-        linkedList.removeEnd();
-        linkedList.loop();
-        System.out.println("----------------------------------");
         System.out.println(linkedList.size());
     }
 }
