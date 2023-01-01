@@ -1,7 +1,6 @@
 package Practice.project;
 
 import java.awt.*;
-import java.awt.event.*;
 
 class PanelManager extends Frame{
     Label lb;
@@ -65,6 +64,11 @@ class PanelManager extends Frame{
             list.addItem(Inqueries[i]);
         }
         return list;
+    }
+
+    public Label getLabel(String name) {
+        lb = new Label(name);
+        return lb;
     }
 
     private Label _getLabel(String name) {
