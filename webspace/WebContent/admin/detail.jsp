@@ -44,15 +44,18 @@
 	%>
 	<h1 align = "center">관리자 계정 정보 수정</h1>
 	<form action = "edit.jsp" method = "post">
+		<input type = "hidden" name = "value" value = "<%=id %>"/>
 		<table align = "center">
 			<% for(int i = 0; i<datas.size(); i++) {%>
 			<tr>
 				<td><%=titles[i] %>: </td>
-				<td><input type = "text" name = "id" value = <%=datas.get(i) %> /></td>
+				<td><input type = "text" name = "value" value = <%=datas.get(i) %> /></td>
 			</tr>
 			<% } %>
 		</table>
-		<p align = "center"><input type = "submit" value = "수정하기"/></p>
+		<p align = "center"><input type = "submit" value = "수정하기" /></p>
 	</form>
+	<p align = "center"><a href = "./adminManager.jsp">취소</a></p>
+	
 </body>
 </html>

@@ -5,8 +5,19 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+	div a {
+		display: inline-block;
+		margin: 0 1rem;
+	}
+</style>
 </head>
 <body>
+	<div align = "center">
+		<a href = "adminManager.jsp">관리자 목록</a>
+		<a href = "userManager.jsp">회원 관리</a>
+		<a href = "./">홈</a>
+	</div>
 	<h1 align = "center">관리자 목록</h1>
 	
 	<%@ page import = "java.sql.*, java.util.*" %>
