@@ -8,15 +8,14 @@
 </head>
 <body>
 	<%@ page import = "java.sql.*, java.util.*" %>
-	<%
+	<%  
 		String id = request.getParameter("id");
 		String pwd = request.getParameter("pwd");
 		String email = request.getParameter("email");
-		String sql = "insert into userinfo(user_id, pwd, email, signup, typeid) values (";
-		sql += "'"+ id + "', '" + pwd + "', '" + email + "', now(), 2)";
-		System.out.println(sql);
 		String driver = "com.mysql.jdbc.Driver";
 		String url = "jdbc:mysql://localhost:3306/webdb?useUnicode=true&characterEncoding=utf8";
+		String sql = "insert into userinfo(user_id, pwd, email, signup, typeid) values (";
+		sql += "'" + id + "', '" + pwd + "', '" + email + "', now(), 1)";
 		
 		Connection conn = null;
 		Statement stmt = null;
@@ -25,18 +24,15 @@
 			Class.forName(driver);
 			conn = DriverManager.getConnection(url, "root", "");
 			stmt = conn.createStatement();
-			
 			stmt.executeUpdate(sql);
-			
 		}catch(Exception e) {
 			e.printStackTrace();
-		}finally{
+		}finally {
 			if(stmt != null) stmt.close();
-			if(conn != null) conn.close();	
+			if(conn != null) conn.close();
 		}
-		response.sendRedirect("index.jsp");
+		
+		response.sendRedirect("adminManager.jsp");
 	%>
-	
-	
 </body>
 </html>
