@@ -15,7 +15,7 @@
 <body>
 	<div align = "center">
 		<a href = "adminManager.jsp">관리자 목록</a>
-		<a href = "userManager.jsp">회원 관리</a>
+		<a href = "./usermanage/userManager.jsp">회원 관리</a>
 		<a href = "./">홈</a>
 	</div>
 	<h1 align = "center">관리자 목록</h1>
