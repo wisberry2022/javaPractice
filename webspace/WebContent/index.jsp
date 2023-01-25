@@ -26,7 +26,8 @@
 				<td colspan = "2" align = "center"><input type = "submit" value = "로그인" /></td>
 			</tr>
 		</table>
-		<p align="center"><a href = "signup.jsp">회원가입</a></p>
+			<p align = "center"><a href = "find.jsp">아이디/비밀번호 찾기</a></p>
+			<p align = "center"><a href = "signup.jsp">회원가입</a></p>
 	</form>
 	<%} else { %>
 		<h1>환영합니다!</h1>

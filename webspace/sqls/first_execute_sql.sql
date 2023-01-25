@@ -1,3 +1,5 @@
+use webdb;
+
 create table if not exists usertype (
 	id tinyint primary key auto_increment,
 	type varchar(20) NOT NULL
