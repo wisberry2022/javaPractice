@@ -11,6 +11,7 @@ import java.util.Scanner;
 public class Client {
 
 	public static void main(String[] args) {
+
 		Socket client = null;
 		OutputStream os = null;
 		OutputStreamWriter osw = null;
